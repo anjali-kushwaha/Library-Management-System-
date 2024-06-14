@@ -1,0 +1,87 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rubik', sans-serif ;
+    background-color: #fff;
+    color: #222;
+}
+
+.conatiner{
+  max-width: 50vw;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-heading{
+    text-align: center;
+    margin: 1rem;
+    font-size: 18px;
+}
+
+.sub-heading{
+    text-align: center;
+}
+
+
+.form-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.form-button,
+.borrow-book-btn,
+.return-book-btn,
+.check-book-availability-btn,
+.due-date-check-btn,
+.search-book-btn{
+    padding: 8px 20px;
+    width: 100%;
+    font-weight: 550;
+    background-color: rgb(40, 167, 69);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+}
+
+.form-input,
+.return-book,
+.borrow-book,
+.due-date-check,
+.check-book-availability,
+.search-book{  
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid rgb(204, 204, 204);
+  margin: 10px 0;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    border: 1px solid rgb(128, 128, 128);
+    margin-bottom: 15px;
+}
+
+
+th,
+td{
+  padding: 10px;
+  text-align: left;
+  font-size: 0.8rem;
+  border: 1px solid rgb(221, 221, 221);
+}

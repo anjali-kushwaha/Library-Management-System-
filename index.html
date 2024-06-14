@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <main class="conatiner">
+
+        <header>
+            <h1 class="main-heading">Library Management System</h1>
+        </header>
+        <section>
+
+            <form class="add-book-form">
+                <h2 class="sub-heading">Add Book</h2>
+
+                <div class="form-box">
+
+                    <label for="title">Enter Book Title:</label>
+                    <input type="text" required id="title" name="title" class="form-input" />
+
+                    <label for="author">Enter Book Author:</label>
+                    <input type="text" required id="author" name="author" class="form-input" />
+
+
+                    <label for="publicationYear">Enter Publication Year:</label>
+                    <input type="tel" required maxlength="4" id="publicationYear" name="publicationYear"
+                        class="form-input" />
+
+                    <label for="maxAllowedDays">Enter Max Allowed Days:</label>
+                    <input type="tel" required maxlength="2" id="maxAllowedDays" name="maxAllowedDays"
+                        class="form-input" />
+
+                    <label for="isbn">Enter ISBN:</label>
+                    <input type="text" required id="isbn" name="isbn" class="form-input" />
+
+                    <button type="submit" class="form-button">Add Book</button>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <form class="search-book-form">
+                <h2 class="sub-heading">Search Book</h2>
+                <div class="form-box">
+                    <label for="search-book">Enter Book Details (Title Author Publication Year):</label>
+                    <input type="text" required class="search-book" name="details" class="form-input" />
+                    <button type="submit" class="search-book-btn">Search Book</button>
+                </div>
+
+                <article class="search-result"></article>
+
+            </form>
+        </section>
+
+        <section>
+            <form class="borrow-book-form">
+                <h2 class="sub-heading">Borrow Book</h2>
+                <div class="form-box">
+                    <label for="borrow-book">Enter Book ID:</label>
+                    <input type="text" required class="borrow-book" name="id" class="form-input" />
+                    <button type="submit" class="borrow-book-btn">Borrow Book</button>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <form class="return-book-form">
+                <h2 class="sub-heading">Return Book</h2>
+                <div class="form-box">
+                    <label for="return-book">Enter ISBN:</label>
+                    <input type="text" required class="return-book" name="isbn" class="form-input" />
+                    <button type="submit" class="return-book-btn">Return Book</button>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <form class="book-availability-form">
+                <h2 class="sub-heading">Check Book Availability</h2>
+                <div class="form-box">
+                    <label for="check-book-availability">Enter Book ID / Name:</label>
+                    <input type="text" required class="check-book-availability" class="form-input" name="query" />
+                    <button type="submit" class="check-book-availability-btn">
+                        Check Book Availability
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <section>
+
+            <form class="due-date-form">
+                <h2 class="sub-heading">Due Date Check</h2>
+                <div class="form-box">
+                    <label for="due-date-check">Enter Book ID / Name:</label>
+                    <input type="text" required class="due-date-check" name="query" class="form-input" />
+                    <button type="submit" class="due-date-check-btn">Due Date Check</button>
+                </div>
+
+                <div class="due-date-result"></div>
+            </form>
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
